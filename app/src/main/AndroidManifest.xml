@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hishambajunaid.canadataxcalculator">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Provinces" />
+        <activity android:name=".ProvincesCont" />
+        <activity android:name=".BcCalculationPage" />
+        <activity android:name=".ManitobaCalculationPage" />
+        <activity android:name=".NewBrunswickCaclulationPage" />
+        <activity android:name=".NewfoundlandCalculationPage" />
+        <activity android:name=".NovaScotiaCalculationPage" />
+        <activity android:name=".OntarioCalculationPage" />
+        <activity android:name=".PrinceEdwardIlandCalculationPage" />
+        <activity android:name=".QuebecCalculationPage" />
+        <activity android:name=".SasktachewanCalculationPage" />
+        <activity android:name=".NorthWestTerritoriesCalculationPage" />
+        <activity android:name=".NunavutCalculationPage" />
+        <activity android:name=".YukonCalculationPage" />
+        <activity android:name=".AlbertaCalculationPage"></activity>
+    </application>
+
+</manifest>

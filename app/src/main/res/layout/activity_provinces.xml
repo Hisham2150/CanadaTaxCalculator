@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Provinces"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/textview2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="9dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/provinces"
+        app:layout_constraintBottom_toTopOf="@+id/albertaflagbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/albertaflagbutton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="19dp"
+        android:layout_marginEnd="17dp"
+        app:layout_constraintBottom_toTopOf="@+id/manitobaflagbutton"
+        app:layout_constraintEnd_toStartOf="@+id/britishcolumbiaflagbutton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview2"
+        app:srcCompat="@drawable/albertaflag" />
+
+    <ImageButton
+        android:id="@+id/manitobaflagbutton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="18dp"
+        android:layout_marginEnd="17dp"
+        app:layout_constraintBottom_toTopOf="@+id/newfoundlandflagbutton"
+        app:layout_constraintEnd_toStartOf="@+id/newbrunswickflagbutton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/albertaflagbutton"
+        app:srcCompat="@drawable/manitobaflag" />
+
+    <ImageButton
+        android:id="@+id/newbrunswickflagbutton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="7dp"
+        app:layout_constraintBottom_toTopOf="@+id/northwestflagbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/manitobaflagbutton"
+        app:layout_constraintTop_toBottomOf="@+id/britishcolumbiaflagbutton"
+        app:srcCompat="@drawable/newbrunswickflag" />
+
+    <ImageButton
+        android:id="@+id/newfoundlandflagbutton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="17dp"
+        app:layout_constraintBottom_toTopOf="@+id/novascotiaflagbutton"
+        app:layout_constraintEnd_toStartOf="@+id/northwestflagbutton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/manitobaflagbutton"
+        app:srcCompat="@drawable/newfoundlandandlabrador" />
+
+    <ImageButton
+        android:id="@+id/novascotiaflagbutton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="46dp"
+        android:layout_marginEnd="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/nextpage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newfoundlandflagbutton"
+        app:srcCompat="@drawable/novascotiaflag" />
+
+    <ImageButton
+        android:id="@+id/britishcolumbiaflagbutton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintBottom_toTopOf="@+id/newbrunswickflagbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/albertaflagbutton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/britishcolumbiaflag" />
+
+    <Button
+        android:id="@+id/nextpage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="35dp"
+        android:layout_marginEnd="7dp"
+        android:text="Next Page"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/novascotiaflagbutton"
+        app:layout_constraintTop_toBottomOf="@+id/northwestflagbutton" />
+
+    <ImageButton
+        android:id="@+id/northwestflagbutton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="9dp"
+        android:layout_marginEnd="7dp"
+        app:layout_constraintBottom_toTopOf="@+id/nextpage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/newfoundlandflagbutton"
+        app:layout_constraintTop_toBottomOf="@+id/newbrunswickflagbutton"
+        app:srcCompat="@drawable/northwestterritories" />
+
+
+</android.support.constraint.ConstraintLayout>

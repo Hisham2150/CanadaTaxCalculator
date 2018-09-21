@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OntarioCalculationPage"
+    tools:layout_editor_absoluteY="81dp">
+
+    <ImageView
+        android:id="@+id/ontarioflag"
+        android:layout_width="90dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="41dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/taxableincomeamnt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:color/background_light" />
+
+
+    <View
+        android:id="@+id/SideBar"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="46dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toTopOf="@+id/FederalTaxResults"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calcbutton" />
+
+    <TextView
+        android:id="@+id/TaxableIncome"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="67dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="71dp"
+        android:text="Taxable Income:"
+        app:layout_constraintBottom_toBottomOf="@+id/calcbutton"
+        app:layout_constraintEnd_toStartOf="@+id/taxableincomeamnt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ontarioflag" />
+
+    <EditText
+        android:id="@+id/taxableincomeamnt"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="9dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/calcbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/TaxableIncome"
+        app:layout_constraintTop_toBottomOf="@+id/ontarioflag" />
+
+    <Button
+        android:id="@+id/calcbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="126dp"
+        android:layout_marginStart="132dp"
+        android:text="Calculate !"
+        app:layout_constraintBottom_toTopOf="@+id/SideBar"
+        app:layout_constraintEnd_toEndOf="@+id/taxableincomeamnt"
+        app:layout_constraintStart_toStartOf="@+id/SideBar"
+        app:layout_constraintTop_toBottomOf="@+id/taxableincomeamnt" />
+
+    <TextView
+        android:id="@+id/FederalTax"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="45dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="46dp"
+        android:text="Federal Tax:"
+        app:layout_constraintBottom_toBottomOf="@+id/ProvincialTax"
+        app:layout_constraintEnd_toStartOf="@+id/FederalTaxResults"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SideBar" />
+
+    <TextView
+        android:id="@+id/ProvincialTax"
+        android:layout_width="0dp"
+        android:layout_height="21dp"
+        android:layout_marginBottom="38dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginStart="16dp"
+        android:text="Provincial Tax:"
+        app:layout_constraintBottom_toTopOf="@+id/CPP_EI"
+        app:layout_constraintEnd_toStartOf="@+id/ProvincialTaxResults"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/CPP_EI"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginStart="16dp"
+        android:text="CPP/EI:"
+        app:layout_constraintBottom_toTopOf="@+id/incomeAfterTaxResults"
+        app:layout_constraintEnd_toStartOf="@+id/CPP_EIResults"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ProvincialTaxResults" />
+
+    <TextView
+        android:id="@+id/IncomeAfterTax"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginStart="16dp"
+        android:text="Income After Tax:"
+        app:layout_constraintBottom_toBottomOf="@+id/incomeAfterTaxResults"
+        app:layout_constraintEnd_toStartOf="@+id/incomeAfterTaxResults"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/incomeAfterTaxResults" />
+
+    <TextView
+        android:id="@+id/FederalTaxResults"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="22dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/ProvincialTaxResults"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/FederalTax"
+        app:layout_constraintTop_toBottomOf="@+id/SideBar" />
+
+    <TextView
+        android:id="@+id/ProvincialTaxResults"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/CPP_EI"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ProvincialTax"
+        app:layout_constraintTop_toBottomOf="@+id/FederalTaxResults" />
+
+    <TextView
+        android:id="@+id/CPP_EIResults"
+        android:layout_width="0dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="106dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="103dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/CPP_EI"
+        app:layout_constraintTop_toTopOf="@+id/FederalTaxResults" />
+
+    <TextView
+        android:id="@+id/incomeAfterTaxResults"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="43dp"
+        android:layout_marginEnd="7dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/IncomeAfterTax"
+        app:layout_constraintTop_toBottomOf="@+id/CPP_EI" />
+</android.support.constraint.ConstraintLayout>
